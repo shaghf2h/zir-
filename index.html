@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إلى حبيبي  ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Tahoma,sans-serif;
+    background:linear-gradient(135deg,#ffb6c1,#ffd1dc);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+}
+
+.box{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+    max-width:500px;
+}
+
+button{
+    padding:12px 25px;
+    margin:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.yes{
+    background:#ff4d88;
+    color:white;
+}
+
+.no{
+    background:#666;
+    color:white;
+}
+
+#result{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.bears{
+    display:none;
+    font-size:90px;
+    animation:kiss 1.5s infinite alternate;
+}
+
+@keyframes kiss{
+    from{transform:translateX(-10px);}
+    to{transform:translateX(10px);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <h1>ساره علي كلش يحبج   ❤️</h1>
+
+    <p>تحبين علي؟</p>
+
+    <button class="yes" onclick="love()">إي ❤️</button>
+    <button class="no" onclick="noLove()">لا 😅</button>
+
+    <div id="result"></div>
+
+    <div class="bears" id="bears">
+        🐻❤️🐻
+    </div>
+</div>
+
+<script>
+function love(){
+    document.getElementById("result").innerHTML =
+    "جنت أعرف 😍 واني هم اموت عليج   ❤️";
+
+    document.getElementById("bears").style.display = "block";
+}
+
+function noLove(){
+    document.getElementById("result").innerHTML =
+    "❌  هذا الزر غير صالح لأن 'علاوي' يموت عليج    ❤️";
+}
+</script>
+
+</body>
+</html>
